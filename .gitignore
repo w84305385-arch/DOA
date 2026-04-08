@@ -1,0 +1,18 @@
+# 1. 忽略 VS Code 編輯器自動產生的設定檔
+.vscode/
+
+# 2. 忽略 C/C++ 編譯過程產生的暫存資料夾
+build/
+*.o
+
+# 3. 忽略巨型安裝檔與系統檔
+*.run
+*.deb
+
+# 4. 忽略 Nsight Systems 效能分析報告
+*.nsys-rep
+*.sqlite
+
+# 5. 忽略交接文件 (選用：如果 Word/PDF 檔很大不想傳，可以留著這兩行)
+*.pdf
+*.docx

@@ -1,0 +1,8 @@
+# vim swp
+*.swp
+
+# log and exec file
+log/
+*.o
+# vscode
+.vscode

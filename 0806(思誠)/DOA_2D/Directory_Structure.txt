@@ -1,0 +1,25 @@
+Directory Structure
+
+DOA演算法為MUSIC、MVDR、ML
+├─math_func.cpp // 使用cpp寫的函數，需打包成靜態函式庫
+├─float_DOA // float BMGS 原始搜索版本
+│  ├─complex_matrix_ops.c // 矩陣操作函數與共用函數
+│  ├─float_BMGS_QR_MUSIC.c // MUSIC
+│  ├─float_BMGS_QR_MVDR.c // MVDR
+│  ├─float_LU_MVDR.c // MVDR uses LU inv
+│  └─float_ML.c // ML
+├─float_DOA_combineAntenna // float BMGS 合併天線 原始搜索版本
+│  ├─complex_matrix_ops.c // 矩陣操作函數與共用函數
+│  ├─float_BMGS_QR_MUSIC_combineAntenna.c // MUSIC
+│  ├─float_BMGS_QR_MVDR_combineAntenna.c // MVDR
+│  └─float_ML_combineAntenna.c // ML
+├─float_DOA_combineAntenna_prune_and_search // float BMGS 合併天線 快速搜索版本
+│  ├─complex_matrix_ops.c // 矩陣操作函數與共用函數
+│  ├─float_BMGS_QR_MUSIC_combineAntenna_prune_and_search.c // MUSIC
+│  ├─float_BMGS_QR_MVDR_combineAntenna_prune_and_search.c // MVDR
+│  └─float_ML_combineAntenna_prune_and_search.c // ML
+└─float_DOA_prune_and_search// float BMGS 合併天線 原始搜索版本
+   ├─complex_matrix_ops.c // 矩陣操作函數與共用函數
+   ├─float_BMGS_QR_MUSIC_prune_and_search.c.c // MUSIC
+   ├─float_BMGS_QR_MVDR_prune_and_search.c.c // MVDR
+   └─float_ML_prune_and_search.c.c // ML
