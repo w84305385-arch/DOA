@@ -165,14 +165,14 @@ int main()
     phys.snr = 10;
 
     int M = 64;
-    float angle_theta[100] = { 25.5, 45.2, 10.0, 80.0, 70, 45, 58}; // elevation
+    float angle_theta[100] = { 16, 16, 10.0, 80.0, 70, 45, 58}; // elevation
     // Tx Parameters initialization
     TxParameters tx;
     tx.Tx_M_x = M;
     tx.Tx_beamwidth = 0.1;
     tx.Tx_beamwidth_samples = 100;
     tx.angle_theta = angle_theta;
-    tx.number_angle = 2;
+    tx.number_angle = 1;
 
     // Rx Parameters initialization
     RxParameters rx;
